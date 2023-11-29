@@ -14,7 +14,7 @@
         <div id="iconBar">
             <a href="https://github.com/KrisAirdancer"><img src="./github-icon.png" alt="GitHub icon" class="icon_1"></a>
             <a href="https://www.linkedin.com/in/chris-s-marston/"><img src="./linkedin-icon.png" alt="LinkedIn icon" class="icon_1"></a>
-            <a href=""></a><img src="./resume-icon-3.png" alt="Resume icon" class="icon_2"></a>
+            <a href="./chris-marston-resume.pdf"><img src="./resume-icon-1.png" alt="Resume icon" class="icon_2"></a>
         </div>
     </div>
 </body>
@@ -34,18 +34,6 @@
         /* font-family: Arial, Helvetica, sans-serif; */
         font-family:'Courier New', monospace;
         /* font-family: "Lucida Console", "Courier New", monospace; */
-    }
-
-    body::before {
-        /* Add border to page */
-        content: '';
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        border: 3px solid var(--orange);
-        border-radius: 10px;
     }
 
     h1, h2 {
@@ -90,5 +78,20 @@
         position: fixed;
         align-items: center;
         justify-content: center;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    @media only screen and (max-device-width : 400px) {
+        #contentDiv {
+            zoom: 0.75;
+        }
+    }
+
+    @media only screen and (max-device-width : 300px) {
+        #contentDiv {
+            zoom: 0.5;
+        }
     }
 </style>
