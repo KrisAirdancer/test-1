@@ -8,7 +8,7 @@
     <title>Chris Marston</title>
 </head>
 <body>
-    <div id="border">
+    <div id="contentDiv">
         <h1>Chris Marston</h1>
         <h2>Computer Science Student</h2>
         <div id="iconBar">
@@ -30,24 +30,14 @@
         color: var(--orange);
         background-color: var(--blue);
 
-        /* Center content */
-        /* height: 100%; */
-        /* width: 100%; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* position: fixed; */
-        /* align-items: center; */
-        /* justify-content: center; */
-
         /* Set fonts */
         /* font-family: Arial, Helvetica, sans-serif; */
         font-family:'Courier New', monospace;
         /* font-family: "Lucida Console", "Courier New", monospace; */
-
-        /* border: 3px solid var(--orange); */
     }
 
     body::before {
+        /* Add border to page */
         content: '';
         position: absolute;
         top: 10px;
@@ -91,7 +81,7 @@
         max-height: 2.4rem;
     }
 
-    #border {
+    #contentDiv {
         /* Center content */
         height: 100%;
         width: 100%;
@@ -100,11 +90,5 @@
         position: fixed;
         align-items: center;
         justify-content: center;
-
-        /* Site border */
-        /* border: 3px solid var(--orange); */
-        /* border-radius: 10px; */
-        /* margin: 5rem; */
-        /* box-sizing:border-box */
     }
 </style>
