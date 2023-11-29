@@ -2,16 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="square-icon.png" type="image/png">
-    <title>Home</title>
+    <link rel="shortcut icon" href="../../square-icon.png" type="image/png">
+    <title>Chris Marston</title>
 </head>
 <body>
-    <p>Hello, World!</p>
-    <p><a href="page-1.html">PAGE 1</a></p>
-    <p><a href="https://krisairdancer.github.io/page-1.html">PAGE 1</a></p>
-    <p><a href="https://krisairdancer.github.io/page-1">PAGE 1</a></p>
-    <p><a href="https://krisairdancer.github.io/test-1/page-1.html">PAGE 1</a></p>
+    <div id="border">
+        <h1>Chris Marston</h1>
+        <h2>Computer Science Student</h2>
+        <div id="iconBar">
+            <a href="https://github.com/KrisAirdancer"><img src="./github-icon.png" alt="GitHub icon" class="icon_1"></a>
+            <a href="https://www.linkedin.com/in/chris-s-marston/"><img src="./linkedin-icon.png" alt="LinkedIn icon" class="icon_1"></a>
+            <a href=""></a><img src="./resume-icon-3.png" alt="Resume icon" class="icon_2"></a>
+        </div>
+    </div>
 </body>
 </html>
+<style>
+    :root {
+        --blue: #122D4A;
+        --orange: #FFA366;
+    }
+
+    body {
+        /* Set colors */
+        color: var(--orange);
+        background-color: var(--blue);
+
+        /* Center content */
+        /* height: 100%; */
+        /* width: 100%; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* position: fixed; */
+        /* align-items: center; */
+        /* justify-content: center; */
+
+        /* Set fonts */
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-family:'Courier New', monospace;
+        /* font-family: "Lucida Console", "Courier New", monospace; */
+
+        /* border: 3px solid var(--orange); */
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 3px solid var(--orange);
+        border-radius: 10px;
+    }
+
+    h1, h2 {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    a:link {
+        color: var(--orange);
+        text-decoration: underline dotted;
+    }
+
+    a:visited {
+        color: var(--orange);
+        text-decoration: underline dotted;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    #iconBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_1 {
+        max-height: 2.5rem;
+    }
+
+    .icon_2 {
+        max-height: 2.4rem;
+    }
+
+    #border {
+        /* Center content */
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+
+        /* Site border */
+        /* border: 3px solid var(--orange); */
+        /* border-radius: 10px; */
+        /* margin: 5rem; */
+        /* box-sizing:border-box */
+    }
+</style>
