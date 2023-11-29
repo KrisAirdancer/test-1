@@ -76,6 +76,10 @@
         max-height: 2.4rem;
     }
 
+    /*
+    Centering a div inside a div: https://stackoverflow.com/questions/51425716/center-a-div-inside-a-div-the-div-inside-must-be-smaller-than-the-parent-div-b
+    */
+
     #outerDiv {
         display: flex;
         position: relative;
@@ -106,13 +110,13 @@
 
     @media only screen and (max-device-width : 400px) {
         #contentDiv {
-            zoom: 0.75;
+            zoom: 0.5;
         }
     }
 
     @media only screen and (max-device-width : 300px) {
         #contentDiv {
-            zoom: 0.5;
+            zoom: 0.25;
         }
     }
 </style>
