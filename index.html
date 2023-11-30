@@ -39,6 +39,8 @@
     }
 
     body, html {
+        min-width: 175px;
+
         margin: 0;
         padding: 0;
     }
@@ -81,6 +83,8 @@
     */
 
     #outerDiv {
+        /* min-width: 200px; */
+
         display: flex;
         position: relative;
         padding: 10px;
@@ -92,6 +96,8 @@
     }
     
     #contentDiv {
+        /* min-width: 200px; */
+
         /* Center content */
         height: 100%;
         width: 100%;
@@ -109,18 +115,42 @@
     }
 
     @media only screen and (max-device-width : 400px) {
+        h1, h2, p {
+            font-size: 0.9rem;
+        }
+        
+        .icon_1 {
+            max-height: 1.8rem;
+        }
+
+        .icon_2 {
+            max-height: 1.7rem;
+        }
+
         #contentDiv {
-            zoom: 0.5;
-            -moz-transform: scale(0.5); 
-            -moz-transform-origin: 0 0;
+            /* zoom: 0.5; */
+            /* -moz-transform: scale(0.5); 
+            -moz-transform-origin: 0 0; */
         }
     }
 
-    @media only screen and (max-device-width : 300px) {
+    @media only screen and (max-device-width : 250px) {
+        h1, h2, p {
+            font-size: 0.6rem;
+        }
+
+        .icon_1 {
+            max-height: 1.2rem;
+        }
+
+        .icon_2 {
+            max-height: 1.1rem;
+        }
+
         #contentDiv {
-            zoom: 0.25;
-            -moz-transform: scale(0.25); 
-            -moz-transform-origin: 0 0;
+            /* zoom: 0.25; */
+            /* -moz-transform: scale(0.25); 
+            -moz-transform-origin: 0 0; */
         }
     }
 </style>
