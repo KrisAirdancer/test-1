@@ -2,143 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./square-icon.png" type="image/png">
-    <title>Chris Marston</title>
+    
+    <title>Document</title>
 </head>
 <body>
-    <div id="outerDiv">
-        <div id="contentDiv">
-            <h1>Chris Marston</h1>
-            <h2>Computer Science Student</h2>
-            <div id="iconBar">
-                <a href="https://github.com/KrisAirdancer"><img src="./github-icon.png" alt="GitHub icon" class="icon_1"></a>
-                <a href="https://www.linkedin.com/in/chris-s-marston/"><img src="./linkedin-icon.png" alt="LinkedIn icon" class="icon_1"></a>
-                <a href="./chris-marston-resume.pdf"><img src="./resume-icon-1.png" alt="Resume icon" class="icon_2"></a>
-            </div>
-        </div>
-    </div>
+    <h1>Hello, World!</h1>
 </body>
 </html>
 <style>
-    :root {
-        --blue: #122D4A;
-        --orange: #FFA366;
-    }
+:root {
+    --blue: #122D4A;
+    --orange: #FFA366;
+    --gray: #dbdbdb;
+}
 
-    body {
-        /* Set colors */
-        color: var(--orange);
-        background-color: var(--blue);
-
-        /* Set fonts */
-        /* font-family: Arial, Helvetica, sans-serif; */
-        font-family:'Courier New', monospace;
-        /* font-family: "Lucida Console", "Courier New", monospace; */
-    }
-
-    body, html {
-        min-width: 175px;
-
-        margin: 0;
-        padding: 0;
-    }
-
-    h1, h2 {
-        padding: 0%;
-        margin: 0%;
-    }
-
-    a:link {
-        color: var(--orange);
-        text-decoration: underline dotted;
-    }
-
-    a:visited {
-        color: var(--orange);
-        text-decoration: underline dotted;
-    }
-
-    a:hover {
-        color: white;
-    }
-
-    #iconBar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .icon_1 {
-        max-height: 2.5rem;
-    }
-
-    .icon_2 {
-        max-height: 2.4rem;
-    }
-
-    /*
-    Centering a div inside a div: https://stackoverflow.com/questions/51425716/center-a-div-inside-a-div-the-div-inside-must-be-smaller-than-the-parent-div-b
-    */
-
-    #outerDiv {
-        /* min-width: 200px; */
-
-        display: flex;
-        position: relative;
-        padding: 10px;
-        margin: 0;
-        height: 100vh;
-
-        /* Include padding and margin when calculating the size of the div */
-        box-sizing: border-box;
-    }
-    
-    #contentDiv {
-        /* min-width: 200px; */
-
-        /* Center content */
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        /* Include padding and margin when calculating the size of the div */
-        box-sizing: border-box;
-
-        /* Border styling */
-        border: 3px solid var(--orange);
-        border-radius: 10px;
-    }
-
-    @media only screen and (max-device-width : 400px) {
-        h1, h2, p {
-            font-size: 0.9rem;
-        }
-        
-        .icon_1 {
-            max-height: 1.8rem;
-        }
-
-        .icon_2 {
-            max-height: 1.7rem;
-        }
-    }
-
-    @media only screen and (max-device-width : 250px) {
-        h1, h2, p {
-            font-size: 0.6rem;
-        }
-
-        .icon_1 {
-            max-height: 1.2rem;
-        }
-
-        .icon_2 {
-            max-height: 1.1rem;
-        }
-    }
+body {
+    background-color: var(--gray);
+}
 </style>
